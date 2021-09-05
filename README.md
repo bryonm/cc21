@@ -1,6 +1,7 @@
 # cc21 Christmas Catalog
 
-## Image links
+## Catalog Product Image links
+
 ### https://crosscatholic.org/wp-content/uploads/2021/08/Multi-Vitamins.jpg
 ### https://crosscatholic.org/wp-content/uploads/2021/08/Orphan-Girls-Mozambique.jpg
 ### https://crosscatholic.org/wp-content/uploads/2021/08/Reading-Glasses.jpg
