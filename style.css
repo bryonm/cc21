@@ -68,7 +68,7 @@ table {
     box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
     background-color: #ffffff;
     font-family: 'Roboto', sans-serif;
-    margin: 5px;
+    margin: 5px 5px 50px 5px;
 }
 
 .price-point {
