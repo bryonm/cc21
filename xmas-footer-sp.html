@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css"
+        integrity="sha512-xnP2tOaCJnzp2d2IqKFcxuOiVCbuessxM6wuiolT9eeEJCyy0Vhcwa4zQvdrZNVqlqaxXhHqsSV1Ww7T2jSCUQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+        body.logged-in.admin-bar {
+            margin-top: 10px !important;
+        }
+
+        .entry {
+            padding: 0;
+        }
+
+        footer {
+            background-color: #6f1f2a;
+            color: #fff;
+            font-family: roboto, sans-serif;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            line-height: 1.625;
+        }
+
+        .container-xmas {
+            display: block;
+            margin: 0 auto;
+        }
+
+        footer h3 {
+            padding-bottom: 10px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        /* INFOGRAPH */
+
+        .footer-infograph {
+            width: 100%;
+            max-width: 460px;
+            display: block;
+            margin: auto;
+            padding: 25px 0;
+        }
+
+        .footer-infograph img {
+            width: 100%;
+            padding-left: 5px;
+        }
+
+        .infograph-text {
+            text-align: center;
+        }
+
+        .infograph-text a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /* CONNECT BLOCK */
+
+        #social-prayers,
+        #footer-menu,
+        #bottom-stuff {
+            display: flex;
+            /* border-top: 1px solid #fff; */
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+
+        #social-prayers p {
+            text-align: center;
+        }
+
+        .newsletter-block {
+            width: 50%
+        }
+
+        .newsletter-block a {
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .social-menu {
+            padding-top: 15px;
+            text-align: center;
+        }
+
+        .social-menu .bi {
+            font-size: 25px;
+            margin: 0 5px;
+        }
+
+        .prayer-block {
+            width: 50%;
+        }
+
+        .prayer-block a {
+            font-weight: bold;
+            color: #fff;
+        }
+
+        /* FOOTER MENU */
+
+        .footer-menu-list {
+            width: 25%;
+        }
+
+        .footer-menu-list:nth-of-type(3) {
+            border-left: 1px solid #ffffff;
+        }
+
+        .footer-menu-list ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .footer-menu-list li {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            /* border-bottom: 1px solid #b58770; */
+            margin: 0 15px;
+            text-align: center;
+        }
+
+
+        .footer-menu-list a {
+            font-weight: 500;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer-menu-list li:hover {
+            background-color: #b58770;
+        }
+
+        /* BOTTOM MENU */
+
+        #bottom-stuff {
+            flex-direction: column;
+        }
+
+        nav.bottom-menu ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            padding: 25px 50px;
+            border-top: 1px solid #fff;
+            margin-top: 25px;
+        }
+
+        #bottom-stuff li {
+            display: inline;
+        }
+
+        #bottom-stuff li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        #bottom-stuff li a:hover {
+            color: #c0997f;
+        }
+
+        .partner-orgs {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+        }
+
+        .partner-orgs p {
+            text-align: center;
+        }
+
+        .partner-logos img {
+            margin: 0 2px;
+        }
+
+        .address-block {
+            display: block;
+            text-align: center;
+        }
+
+        .footer-sign-up-btn {
+            display: block;
+            margin: 15px auto;
+            background-color: #ffffff;
+            max-width: 215px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .footer-sign-up-btn a {
+            color: #6f1f2a;
+        }
+
+        @media only screen and (min-width: 768px) {
+
+            /* STICKY DONATE BUTTON */
+            #mob-sticky-button {
+                display: none;
+            }
+
+            #sticky-button a {
+                position: fixed;
+                top: 50%;
+                left: -80px;
+                transition: 0.3s;
+                padding: 5px 15px 5px 0;
+                width: 155px;
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 500;
+                color: white;
+                border-radius: 0 15px 15px 0;
+                text-align: center;
+                z-index: 99;
+            }
+
+            #sticky-button a:hover {
+                left: 0;
+            }
+
+            #fixed-donate-btn {
+                top: 200px;
+                background-color: #6f1f2a;
+                box-shadow: 0 0 6px 1px #989898b3;
+                letter-spacing: 2.5px;
+            }
+
+            .bi-gift-fill {
+                margin-left: 27px;
+                margin-right: 0;
+            }
+        }
+
+        /* MOBILE STYLES */
+
+        @media only screen and (max-width: 768px) {
+            nav.bottom-menu ul {
+                padding: 25px;
+            }
+
+            /* STICKY DONATE BUTTON */
+
+            #sticky-button {
+                display: none;
+            }
+
+            #mob-sticky-button a {
+                position: fixed;
+                top: 50%;
+                left: 8px;
+                transition: 0.3s;
+                padding: 10px;
+                width: 50px;
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 500;
+                color: white;
+                border-radius: 25px;
+                text-align: center;
+                background-color: #6f1f2a;
+                box-shadow: 0 0 6px 1px #989898b3;
+                z-index: 99;
+            }
+
+            .bi-gift-fill {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+
+        @media only screen and (max-width: 740px) {
+
+            #social-prayers,
+            #footer-menu,
+            #bottom-stuff {
+                flex-direction: column;
+            }
+
+            #social-prayers {
+                padding-top: 0;
+            }
+
+            #social-prayers p {
+                padding-left: 0;
+            }
+
+            .footer-menu-list,
+            .prayer-block,
+            .newsletter-block {
+                width: 100%;
+            }
+
+            .prayer-block {
+                padding-right: 0;
+                text-align: center;
+            }
+
+            h3 {
+                padding-bottom: 25px;
+            }
+
+            .social-menu,
+            .newsletter-block {
+                padding-top: 25px;
+                text-align: center;
+            }
+
+            #footer-menu h3 {
+                padding-left: 0;
+                /* padding-bottom: 15px; */
+            }
+
+            .footer-menu-list li {
+                padding-left: 0;
+                margin-right: 0;
+                margin-left: 0;
+                text-align: center;
+            }
+
+            .footer-menu-list ul {
+                margin-bottom: 0;
+            }
+
+            nav.bottom-menu ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .partner-orgs p {
+                text-align: center;
+            }
+
+            .address-block p {
+                margin: 0 25px;
+            }
+
+            .footer-menu-list:nth-of-type(3) {
+                border-left: none;
+            }
+
+            .mob-h3 {
+                display: none;
+            }
+
+            .footer-infograph img {
+                padding-left: 0;
+            }
+        }
+    </style>
+    <title>Spanish xmas footer</title>
+
+
+</head>
+
+<body>
+    <footer>
+        <div class="container-xmas">
+
+            <!-- Infograph -->
+            <div class="footer-infograph">
+                <a href="https://crosscatholic.org/impacto/"><img
+                        src="https://crosscatholic.org/wp-content/uploads/2021/02/CCO_FooterStatsGraphic-Update-SPANISH.jpg"
+                        alt=""></a>
+
+                <p class="infograph-text"> <a href="https://crosscatholic.org/about-us/finances/">Datos Financieros
+                        Auditados del año fiscal 2020</a></p>
+            </div>
+            <!-- FOOTER MENU -->
+            <section id="footer-menu">
+                <div class="footer-menu-list">
+                    <h3>Impacto</h3>
+                    <ul>
+                        <li><a href="https://crosscatholic.org/impacto/alimentos/">Alimentos nutritivos</a></li>
+                        <li><a href="https://crosscatholic.org/impacto/agua/">Agua potable</a></li>
+                        <li><a href="https://crosscatholic.org/impacto/vivienda/">Vivienda digna</a></li>
+                        <li><a href="https://crosscatholic.org/impacto/educacion/">Educación</a></li>
+                        <li><a href="https://crosscatholic.org/impacto/ninos-vulnerables/">Niños vulnerables</a></li>
+                        <li><a href="https://crosscatholic.org/impacto/microempresa/">Microempresa</a></li>
+                        <li><a href="https://crosscatholic.org/impacto/damnificados/">Apoyo a damnificados</a></li>
+                        <li><a href="https://crosscatholic.org/impacto/atencion-medica/">Atención médica</a></li>
+                    </ul>
+                </div>
+                <div class="footer-menu-list">
+                    <!-- <h3>Get Involved</h3> -->
+                    <h3 class="mob-h3">&nbsp;</h3>
+                    <ul>
+                        <li><a href="https://crosscatholic.org/nuestro-ministerio/">Quiénes somos</a></li>
+                        <li><a href="https://crosscatholic.org/intenciones/">Para oración</a></li>
+                        <li><a href="https://crosscatholic.org/box-of-joy-espanol/">Box of Joy</a></li>
+                        <li><a href="https://crosscatholic.org/donar/">Donar</a></li>
+                        <li><a href="https://crosscatholic.org/mensual/">Mensual</a></li>
+                    </ul>
+                </div>
+                <div class="footer-menu-list">
+                    <h3>Dónde ayudamos</h3>
+                    <ul>
+                        <li><a href="https://crosscatholic.org/mission-work/food/">Necesidades urgentes</a></li>
+                        <li><a href="https://crosscatholic.org/mission-work/education/">Comida para Haití</a></li>
+                        <li><a href="https://crosscatholic.org/mission-work/education/">Agua potable para familias en
+                                necesidad</a></li>
+                        <li><a href="https://crosscatholic.org/mission-work/disaster-relief/">Ponle fin a su hambre</a>
+                        </li>
+                        <li><a href="https://crosscatholic.org/mission-work/medical-aid/">Da esperanza a los
+                                huérfanos</a></li>
+                        <li><a href="https://crosscatholic.org/mission-work/microenterprise/">Comida nutritiva</a></li>
+                        <li><a href="https://crosscatholic.org/mission-work/vulnerable-children/">Comparte el amor de
+                                Cristo con los niños de Haití</a></li>
+                        <li><a href="https://crosscatholic.org/mission-work/water/">Misión Kobonal Haití​</a></li>
+                        <li><a href="https://crosscatholic.org/mission-work/vulnerable-children/">Leche para
+                                Guatemala</a></li>
+                        <li><a href="https://crosscatholic.org/mission-work/water/">Víctimas de huracanes​</a></li>
+                    </ul>
+                </div>
+                <div class="footer-menu-list">
+                    <!-- <h3>Where We Work</h3> -->
+                    <h3 class="mob-h3">&nbsp;</h3>
+                    <ul>
+                        <li><a href="https://crosscatholic.org/about-us/contact-us/">Contáctanos</a></li>
+                        <li><a href="https://crosscatholic.org/privacy-policy/">Política de privacidad</a></li>
+                        <li><a href="https://crosscatholic.org/about-us/finances/disclosure-statements/">Declaración de
+                                divulgación</a></li>
+                        <li><a href="https://crosscatholic.org/espanol/">Inicio</a></li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <!-- SUBFOOTER MENU -->
+            <!-- BOTTOM CONTENT -->
+
+            <section id="social-prayers">
+                <div class="newsletter-block">
+                    <!-- SOCIAL MENU -->
+                    <div class="social-menu">
+                        <h3>Conéctese con Cross</h3>
+                        <a href="https://www.facebook.com/crosscatholic"><i class="bi bi-facebook"></i></a>
+                        <a href="https://twitter.com/CrossCatholic"><i class="bi bi-twitter"></i></a>
+                        <a href="https://www.instagram.com/crosscatholic/"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.youtube.com/crosscatholic"><i class="bi bi-youtube"></i></a>
+                        <a href="https://www.linkedin.com/company/crosscatholicoutreach/"><i
+                                class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="prayer-block">
+                    <!-- Prayer block-->
+                    <h3>Permítenos rezar por ti</h3>
+                    <p>El personal de Cross Catholic Outreach reza frecuentemente por los amigos del ministerio. Haz
+                        clic aquí para enviarnos tus intenciones de oración.</p>
+                    <span class="footer-sign-up-btn"><a href="https://crosscatholic.org/intenciones/">ENVIAR</a></span>
+                </div>
+            </section>
+
+            <section id="bottom-stuff">
+                <div class="partner-orgs">
+                    <div class="partner-logos">
+                        <img src="https://crosscatholic.org/wp-content/uploads/2018/10/ICSC_LogoWeb.jpg" alt="">
+                        <img src="https://crosscatholic.org/wp-content/uploads/2019/06/DicasteryIHD_NewLogo.png" alt="">
+                        <img style="margin-bottom: -5px;"
+                            src="https://crosscatholic.org/wp-content/uploads/2019/06/cfclogoCCO_2019.png" alt="">
+                    </div>
+                    <p>Cross Catholic Outreach is a 501(c)(3) | EIN 65-1156061</p>
+                </div>
+
+                <!-- Address Block -->
+                <div class="address-block">
+                    <p>Cross Catholic Outreach | 2700 N. Military Trail | Suite 300 | PO Box 273908 | Boca Raton,
+                        Florida
+                        33427-3908 | 800-914-2420</p>
+                    <p>© 2021 Cross Catholic Outreach. Todos los derechos reservados.</p>
+
+                </div>
+            </section>
+        </div>
+    </footer>
+
+</body>
+
+</html>
